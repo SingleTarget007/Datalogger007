@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="npm i bootstrap-icons">
+        
+        <title>Freelancer -Proyecto 007</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script> <!-- Añade esta línea -->
+        
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+             <img src="assets/img/porfolio/logo_blanco_fondo_color.png" alt="">
+                <a class="navbar-brand" href="#page-top">Single Target</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">INFORMACIÓN</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">ACERCA DE</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">CONÓCENOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="imagenP" src="assets/img/porfolio/museo_sarmiento.jpg" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Proyecto 007</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="eslogan">Datos al instante, Decisiones al momento  </p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Mediciones Y Documentación</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/porfolio/Temperatura.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/porfolio/Humedad.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/porfolio/Lumenes.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/porfolio/Garantia.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/porfolio/Manual de Usuario.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/porfolio/Manual de Mantenimiento.png" alt="..." />
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">¿Quienes somos?</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Single Target es una Pyme con integrantes codiciosos de conocimientos buscando ofrecer nustros servicios a distintos usuarios que lo necesiten y expandir sus horizontes en busca de nuevas exeriencias. </p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Buscamos brindar la mejor atencion a nustros clientes ofreciendo la informacion necesaria y la mejor calidad de nuestros productos de forma eficiente y acorde a los requerimientos del usuario.</p></div>
+                </div>
+                <!-- About Section Button-->
+                
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Nosotros somos</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="card-group">
+                    <div class="card">
+                      <img src="assets/img/porfolio/fotos_personas/seba.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Sebastián Farisco Medina</h5>
+                        <p class="card-text">CEO de Single Target</p>Fabricacion y Supervicion de Elaboracion Fisica.
+                      </div>
+                      <div class="card-footer">
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="assets/img/porfolio/fotos_personas/thiago.jpeg" class="card-img-top" alt="..." >
+                      <div class="card-body">
+                        <h5 class="card-title">Thiago Oscar Ludueña</h5>
+                        <p class="card-text">CEO de Single Target</p>Desarrollo de Software.
+                      </div>
+                      <div class="card-footer">
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="assets/img/porfolio/fotos_personas/nico.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Nicolás Gómez Paradiso</h5>
+                        <p class="card-text">CEO de Single Target </p>Fabricacion y Desarrollo 3D.
+                      </div>
+                      <div class="card-footer">
+                      </div>
+                    </div>
+                    
+                       
+                      </div>
+                    </div>
+                  </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">UBICACIÓN</h4>
+                        <p class="lead mb-0">
+                           Ciudad Autonoma de Buenos Aires
+                            <br />
+                            <a href="https://maps.app.goo.gl/gYq8t5WJUhEfVoJJ9">Cuba 2079 </a>
+                            
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">nuestras redes</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/share/Hrtg7fHvs2zzVpFE/"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UC2MRgJM-E7afqBXw7dXCf8A"><i class="fab fa-fw fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/sebastian-farisco-086a47307/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/singletarget007/"><i class="fab fa-fw fa-instagram"></i></a>
+                    </div>
+
+                    
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">ACERCA DE Museo Sarmiento</h4>
+                        <p class="lead mb-0">
+                            <a href="https://museosarmiento.cultura.gob.ar/">Museo Sarmiento</a>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Proyecto 007 <img class="logo_final" src="assets/img/porfolio/logo_blanco_fondo_color.png" alt=""> ; E.T.28"Republica Francecsa"</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Temperatura</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                 
+                                    <!-- Portfolio Modal - Text-->
+                                    <div class="medidos">
+                                    <p class="mb-4"> Temperatura/°C: </p>
+                                    <div class="valores" id="temp"></div>
+                                    </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                       Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Humedad</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                   
+                                    <!-- Portfolio Modal - Text-->
+                                    <div class="medidos">
+                                        <p class="mb-4"> Humedad/%: </p>
+                                        <div class="valores" id="hum"></div>
+                                        </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                       Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Lumenes</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    
+                                    <!-- Portfolio Modal - Text-->
+                                    <div class="medidos">
+                                        <p class="mb-4"> Lumenes/m²: </p>
+                                        <div class="valores" id="lux"></div>
+                                        </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                       Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Garantia</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="libro rounded mb-5" src="assets/img/porfolio/Garantia int.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb1-4">Para obtener la garantia proporcionada por Single Target puede acceder al boton de aqui abajo.</p>
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-xl btn-outline-light" href= https://drive.google.com/file/d/12ngp8dpJhJPUyTWqafchilDq_p2g2kPe/view>>
+                                            <i class="fas fa-plus me-2"></i>
+                                            Garantia
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                       Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Manual de Usuario</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="libro rounded mb-5" src="assets/img/porfolio/Manual de Usuario int.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb1-4">Para obtener el Manual de Usuario proporcionado por Single Target puede acceder al boton de aqui abajo.</p>
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-xl btn-outline-light" href= https://drive.google.com/file/d/1J0N2twcSmZGjyZhscHqjId-qVxLmS-ZD/view>>
+                                            <i class="fas fa-plus me-2"></i>
+                                            Manual de Usuario
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                       Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Manual de Mantenimiento</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-cube"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="libro rounded mb-5" src="assets/img/porfolio/Manual de Mantenimiento int.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb1-4">Para obtener el Manual de Mantenimiento bproporcionado por Single Target puede acceder al boton de aqui abajo.</p>
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-xl btn-outline-light" href= https://drive.google.com/file/d/13jQVQRY4RIXSnIvbCrA39SEs3mictz6L/view>>
+                                            <i class="fas fa-plus me-2"></i>
+                                            Manual de Mantenimiento
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                       Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://cubetbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        
+        <script>
+            const client = mqtt.connect("wss://broker.hivemq.com:8884/mqtt"); // Cambia esto por tu dirección de broker    en caso de no andar retirar el wss:// y cambiar el puerto al 8083, no el 1883, este es solo para TCP normales 
+    
+            client.on("connect", () => {
+                console.log("Conectado al broker");
+                client.subscribe("/007/outTopictemp", (err) => {
+                    if (!err) {
+                        console.log("Suscrito al tema");
+                    }
+                }); 
+            });
+    
+            client.on("message", (topic, message) => {
+                // Mensaje recibido
+                document.getElementById("temp").innerText = message.toString();
+            });
+        </script>
+
+        <script>
+            const client1 = mqtt.connect("wss://broker.hivemq.com:8884/mqtt"); // Cambia esto por tu dirección de broker    en caso de no andar retirar el wss:// y cambiar el puerto al 8083, no el 1883, este es solo para TCP normales 
+
+            client1.on("connect", () => {
+                console.log("Conectado al broker");
+                client1.subscribe("/007/outTopichum", (err) => {
+                    if (!err) {
+                        console.log("Suscrito al tema");
+                    }
+                }); 
+            });
+
+            client1.on("message", (topic, message) => {
+                // Mensaje recibido
+                document.getElementById("hum").innerText = message.toString();
+            });
+        </script>
+
+        <script>
+            const client2 = mqtt.connect("wss://broker.hivemq.com:8884/mqtt"); // Cambia esto por tu dirección de broker    en caso de no andar retirar el wss:// y cambiar el puerto al 8083, no el 1883, este es solo para TCP normales 
+
+            client2.on("connect", () => {
+                console.log("Conectado al broker");
+                client2.subscribe("/007/outTopiclux", (err) => {
+                    if (!err) {
+                        console.log("Suscrito al tema");
+                    }
+                }); 
+            });
+
+            client2.on("message", (topic, message) => {
+                // Mensaje recibido
+                document.getElementById("lux").innerText = message.toString();
+            });
+        </script>
+
+    </body>
+</html>
